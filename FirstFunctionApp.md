@@ -17,7 +17,7 @@
 `func init . --python`
 
 This creates
-`host.json
-`local.settings.json
-`requirements.txt
+`host.json`
+`local.settings.json`
+`requirements.txt`
 
