@@ -24,10 +24,10 @@ This creates
 ## Step 2: Create a local python environment
 
 `python -m venv .venv`
-
 `# Windows`
-`.venv\Scripts\activate`
 
+`.venv\Scripts\activate`
 `# Linux / macOS`
+
 `source .venv/bin/activate`
 
