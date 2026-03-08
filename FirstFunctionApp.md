@@ -39,15 +39,34 @@ This creates
 
 Example:
 
-Template: HTTP trigger
-Function name: HttpExample
-Auth level: anonymous
+**Template**: HTTP trigger   
+**Function name**: HttpExample   
+**Auth level**: anonymous   
 
 ## Step 4: Install Dependencies
 
-`
-pip install requests
-pip freeze > requirements.txt
-`
+`pip install requests`
+
+`pip freeze > requirements.txt`
+
+✅ Only requirements.txt is deployed
+
+### Step 5: Exclude venv from deployment (IMPORTANT)
+
+**Create .funcignore:**
+
+
+`.venv/`
+
+`__pycache__/`
+
+`local.settings.json`
+
+`.git/`
+
+`.vscode/`
+
+
+This prevents publish failures and bloated packages.
 
 
