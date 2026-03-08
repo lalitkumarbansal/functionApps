@@ -11,9 +11,13 @@
 
 ## Step 1: Create a local project
 `mkdir myfuncapp`
+
 `cd myfuncapp`
 
 `func init . --python`
 
-
+This creates
+`host.json
+`local.settings.json
+`requirements.txt
 
