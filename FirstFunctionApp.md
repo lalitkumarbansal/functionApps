@@ -21,3 +21,13 @@ This creates
 `local.settings.json`
 `requirements.txt`
 
+## Step 2: Create a local python environment
+
+`python -m venv .venv`
+
+`# Windows`
+`.venv\Scripts\activate`
+
+`# Linux / macOS`
+`source .venv/bin/activate`
+
