@@ -69,4 +69,42 @@ Example:
 
 This prevents publish failures and bloated packages.
 
+### Step 6: Test Locally
+
+`func start`
+
+**Test**
+
+`curl http://localhost:7071/api/HttpExample`
+
+### Step 7: Login and Select Subscription
+
+`az login`
+
+`az account set --subscription <SUBSCRIPTION_ID>`
+
+### Step 8: Resource Group and Storage Account
+
+
+`az group create --name rg-myfunc  --location centralindia`
+
+`az storage account create  --name myfuncstor123   --location centralindia   --resource-group rg-myfunc   --sku Standard_LRS`
+
+**Note**
+
+1) Storage account should be unique
+2) Shared Access Key should be Enabled. Query to test the same, outcome must be true. if not Goto Storage Account, Goto Configuration and enable it
+   <img width="332" height="74" alt="image" src="https://github.com/user-attachments/assets/050639e4-e715-4430-a626-d57df0f52ce3" />
+
+   `az storage account show  --name mylalitfuncstor123  --resource-group rg-myfunc --query "allowSharedKeyAccess" `
+3) Network should be enabled, Query to test the same
+
+   'az storage account show --name mylalitfuncstor123 --resource-group rg-myfunc --query "networkRuleSet" `
+
+   `az storage account update   --name mylalitfuncstor123   --resource-group rg-myfunc   --bypass AzureServices `
+4) 
+
+
+
+
 
