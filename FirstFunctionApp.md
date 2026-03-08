@@ -9,3 +9,11 @@
 ##### Python (match Azure runtime)
 `python --version   # 3.9 / 3.10 / 3.11 recommended`
 
+## Step 1: Create a local project
+`mkdir myfuncapp
+`cd myfuncapp
+
+`func init . --python
+
+
+
