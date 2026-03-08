@@ -90,7 +90,7 @@ This prevents publish failures and bloated packages.
 
 `az storage account create  --name myfuncstor123   --location centralindia   --resource-group rg-myfunc   --sku Standard_LRS`
 
-` az functionapp create --resource-group rg-myfunc   --consumption-plan-location centralindia  --runtime python  --runtime-version 3.14 --functions-version 4 --name my-python-func-app --storage-account mylalitfuncstor123 --os-type Linux `
+` az functionapp create --resource-group rg-myfunc   --consumption-plan-location centralindia  --runtime python  --runtime-version 3.10 --functions-version 4 --name my-python-func-app --storage-account mylalitfuncstor123 --os-type Linux `
 
 **Note**
 
