@@ -107,7 +107,27 @@ This prevents publish failures and bloated packages.
 4) For following error Goto Network and enable the all networks
    <img width="1876" height="57" alt="image" src="https://github.com/user-attachments/assets/20b41f1b-70c2-4e1a-b2af-0853a72be099" />
 
-   
+### Step 9: Configure Python build behavior (RECOMMENDED)
+
+Explicitly **enable remote build**
+
+`az functionapp config appsettings set --name my-python-func-app-lalit --resource-group rg-myfunc --settings SCM_DO_BUILD_DURING_DEPLOYMENT=true`
+
+### Step 10: Deploy using Azure Functions Core Tools
+
+`func azure functionapp publish my-python-func-app-lalit --build remote`
+
+**What happens internally:**
+
+Zips your project (excluding .venv)
+Uploads code
+Azure builds dependencies from requirements.txt
+Installs into .python_packages on the server
+
+### Step 11: Validate Deployment
+
+`az functionapp function list --name my-python-func-app  --resource-group rg-myfunc`
+
 
 
 
