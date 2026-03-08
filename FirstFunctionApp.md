@@ -24,10 +24,30 @@ This creates
 ## Step 2: Create a local python environment
 
 `python -m venv .venv`
+
 `# Windows`
 
 `.venv\Scripts\activate`
+
 `# Linux / macOS`
 
 `source .venv/bin/activate`
+
+## Step 3: Add a function
+
+`func new`
+
+Example:
+
+Template: HTTP trigger
+Function name: HttpExample
+Auth level: anonymous
+
+## Step 4: Install Dependencies
+
+`
+pip install requests
+pip freeze > requirements.txt
+`
+
 
