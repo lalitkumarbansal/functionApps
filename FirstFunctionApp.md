@@ -18,8 +18,6 @@
 
 This creates
 `host.json
-
 `local.settings.json
-
 `requirements.txt
 
