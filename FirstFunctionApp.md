@@ -104,7 +104,10 @@ This prevents publish failures and bloated packages.
    `az storage account show --name mylalitfuncstor123 --resource-group rg-myfunc --query "networkRuleSet" `
 
    `az storage account update   --name mylalitfuncstor123   --resource-group rg-myfunc   --bypass AzureServices `
-4) 
+4) For following error Goto Network and enable the all networks
+   <img width="1876" height="57" alt="image" src="https://github.com/user-attachments/assets/20b41f1b-70c2-4e1a-b2af-0853a72be099" />
+
+   
 
 
 
