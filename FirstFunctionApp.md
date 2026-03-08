@@ -128,6 +128,9 @@ Installs into .python_packages on the server
 
 `az functionapp function list --name my-python-func-app  --resource-group rg-myfunc`
 
+**Test Endpoint**
+
+`curl https://my-python-func-app.azurewebsites.net/api/HttpExample`
 
 
 
